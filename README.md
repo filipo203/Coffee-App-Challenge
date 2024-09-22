@@ -1,9 +1,9 @@
 # Coffee App Assignment
-## Coding Challenge (Graduate Android)
+### Coding Challenge (Graduate Android)
 
 A Coffee exploration app using Kotlin, Jetpack Compose, Retrofit, Dagger-Hilt and Coil. Clicking on card with coffee takes you to the details page of selected coffee.
 
-## Screenshots
+### Screenshots
 
 ![alt text](https://github.com/filipo203/Coffee-App-Challenge/blob/main/screenshots/Screenshot_20240922_124351%20%5BRESIZED%5D.png)
 ![alt text](https://github.com/filipo203/Coffee-App-Challenge/blob/main/screenshots/Screenshot_20240922_124415%20%5BRESIZED%5D.png)
