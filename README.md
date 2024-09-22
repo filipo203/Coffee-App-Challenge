@@ -12,13 +12,13 @@ A Coffee exploration app using Kotlin, Jetpack Compose, Retrofit, Dagger-Hilt an
 ## Coffee API
 https://api.sampleapis.com/coffee/iced
 
-### Dependencies
+## Dependencies
 
-SDK:
+### SDK:
 
 Android 14.0 ("UpsideDownCake"), API Level: 34, Revision: 3
 
-Buildscript dependency:
+### Buildscript dependency:
 
 buildscript {
     dependencies{
@@ -26,7 +26,7 @@ buildscript {
     }
 }
 
-Plugins:
+### Plugins:
 
 id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -42,7 +42,7 @@ id("com.android.application")
     }
     
     
-Gradle dependencies:
+### Gradle dependencies:
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.5")
