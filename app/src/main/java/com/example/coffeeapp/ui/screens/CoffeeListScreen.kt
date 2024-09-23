@@ -40,7 +40,9 @@ import com.example.coffeeapp.retrofit.IcedCoffee
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CoffeeListScreen(
-    coffees: List<IcedCoffee>, errorMessage: String?, onCoffeeClick: (IcedCoffee) -> Unit
+    coffees: List<IcedCoffee>,
+    errorMessage: String?,
+    onCoffeeClick: (IcedCoffee) -> Unit
 ) {
     Scaffold(modifier = Modifier.fillMaxWidth(), topBar = {
         CenterAlignedTopAppBar(
@@ -70,14 +72,13 @@ fun CoffeeListScreen(
                 }
             }
         }
-
     }
-
 }
 
 @Composable
 fun CoffeeListItem(
-    coffee: IcedCoffee, onClick: () -> Unit
+    coffee: IcedCoffee,
+    onClick: () -> Unit
 ) {
     ElevatedCard(
         modifier = Modifier
@@ -85,14 +86,15 @@ fun CoffeeListItem(
             .padding(12.dp),
         elevation = CardDefaults.cardElevation(2.dp)
     ) {
-        Column(modifier = Modifier
-            .fillMaxSize()
-            .animateContentSize(
-                animationSpec = tween(
-                    easing = LinearOutSlowInEasing
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .animateContentSize(
+                    animationSpec = tween(
+                        easing = LinearOutSlowInEasing
+                    )
                 )
-            )
-            .clickable { onClick() }) {
+                .clickable { onClick() }) {
             Row(
                 horizontalArrangement = Arrangement.SpaceBetween,
                 modifier = Modifier
@@ -108,7 +110,7 @@ fun CoffeeListItem(
                     )
                 }
             }
-            Text(coffee.description, fontSize = 16.sp, modifier = Modifier.padding(8.dp))
+            Text(coffee.description, fontSize = 14.sp, modifier = Modifier.padding(8.dp))
         }
     }
 }

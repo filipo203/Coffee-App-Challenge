@@ -12,24 +12,28 @@ A Coffee exploration app using Kotlin, Jetpack Compose, Retrofit, Dagger-Hilt an
 ## Coffee API
 https://api.sampleapis.com/coffee/iced
 
-### Dependencies
+## Dependencies
 
-SDK:
+### SDK:
 Android 14.0 ("UpsideDownCake"), API Level: 34, Revision: 3
 
-Buildscript dependency:
-buildscript {
-    dependencies{
-        classpath("com.google.dagger:hilt-android-gradle-plugin:2.44")
-    }
-}
+### Buildscript dependency:
 
-Plugins:
-id("com.android.application")
+    buildscript {
+        dependencies{
+            classpath("com.google.dagger:hilt-android-gradle-plugin:2.44")
+        }
+    }
+
+### Plugins:
+
+    id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
     id("dagger.hilt.android.plugin")
     
+### Java Version:
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
@@ -39,7 +43,7 @@ id("com.android.application")
     }
     
     
-Gradle dependencies:
+### Gradle dependencies:
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.5")
